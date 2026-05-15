@@ -7,31 +7,16 @@
 
   <meta
     name="viewport"
-    content="width=device-width, initial-scale=1.0"
+    content="width=device-width, initial-scale=1"
   >
 
   <title>
-    Add Name and Date on Photo Online Free
+    Add Name and Date to Photo Online
   </title>
-
-  <meta
-    name="description"
-    content="Add name and date on photo online free for SSC, Railway, UPSC and Sarkari forms."
-  >
 
   <link
     rel="stylesheet"
     href="/assets/css/core.css"
-  >
-
-  <link
-    rel="stylesheet"
-    href="/assets/css/layout.css"
-  >
-
-  <link
-    rel="stylesheet"
-    href="/assets/css/tools.css"
   >
 
 </head>
@@ -96,7 +81,7 @@
 
     </div>
 
-    <!-- AUTO SHARED SECTION -->
+    <!-- AUTO SHARED -->
     <div id="stc-section"></div>
 
   </main>
@@ -104,13 +89,15 @@
   <!-- FOOTER -->
   <div id="st-footer"></div>
 
-  <!-- APP -->
-  <script
-    type="module"
-    src="/assets/js/core/app.js"
-  ></script>
+  <script type="module">
 
-  <!-- TOOL -->
+    import { loadLayout }
+    from "/assets/js/core/app.js";
+
+    loadLayout();
+
+  </script>
+
   <script
     type="module"
     src="/assets/js/tools/name-date.js"
