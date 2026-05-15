@@ -197,6 +197,107 @@ export function loadLayout() {
   </div>
   `;
 
+
+
+  const sharedSections = `
+    <!-- 6. Why like Dozni -->
+    <section class="stc-section">
+      <h2 class="stc-title">Why like sarkari-tool.dozni.com?</h2>
+  
+      <div class="stc-card" style="text-align:center;">
+        <p style="font-size:18px;color:#3f3f3f;margin:0 0 10px;">
+          People like Dozni's sarkari tools for some simple reasons:
+        </p>
+        <div class="stc-why-pills">
+          <span class="stc-why-pill"><span>💸</span><span>Free</span></span>
+          <span class="stc-why-pill"><span>⚡</span><span>Fast</span></span>
+          <span class="stc-why-pill"><span>♾️</span><span>Unlimited</span></span>
+          <span class="stc-why-pill"><span>🙂</span><span>User Friendly</span></span>
+          <span class="stc-why-pill"><span>🔒</span><span>Secure</span></span>
+        </div>
+      </div>
+    </section>
+  
+    <!-- 7. Features -->
+    <section class="stc-section">
+      <h2 class="stc-title">Our Features</h2>
+  
+      <div class="stc-card">
+        <div class="stc-features-grid">
+          <div class="stc-feature-card">
+            <div class="stc-feature-icon">
+              <!-- clock icon -->
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="8"></circle>
+                <path d="M12 8v4l2 2"></path>
+              </svg>
+            </div>
+            <div>
+              <div class="stc-feature-title">Fast</div>
+              <p>Our tools processing is powerful. It takes less time to perform any task on any tool.</p>
+            </div>
+          </div>
+  
+          <div class="stc-feature-card">
+            <div class="stc-feature-icon">
+              <!-- infinity icon -->
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 12c1.7-2 3.7-3 6-3s4.3 1 6 3-3.7 3-6 3-4.3-1-6-3z"></path>
+              </svg>
+            </div>
+            <div>
+              <div class="stc-feature-title">Unlimited</div>
+              <p>All the my-services are free and provide you to use them unlimited times without any Restrictions.</p>
+            </div>
+          </div>
+  
+          <div class="stc-feature-card">
+            <div class="stc-feature-icon">
+              <!-- user icon -->
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="9" r="3.5"></circle>
+                <path d="M6 18c1.8-2.1 3.8-3 6-3s4.2 0.9 6 3"></path>
+              </svg>
+            </div>
+            <div>
+              <div class="stc-feature-title">User Friendly</div>
+              <p>All the tools are designed for all users, advanced knowledge is not required.</p>
+            </div>
+          </div>
+  
+          <div class="stc-feature-card">
+            <div class="stc-feature-icon">
+              <!-- shield icon -->
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 4 6 6v6c0 3.5 2.5 5.8 6 8 3.5-2.2 6-4.5 6-8V6z"></path>
+              </svg>
+            </div>
+            <div>
+              <div class="stc-feature-title">Security</div>
+              <p>We do not upload any type of files anywhere on the Server. Your PDF, Image, etc. files are very secure.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+  </main>
+  
+  
+  
+    <!-- INFO SECTION -->
+    <section class="st-info-wrapper">
+      <div class="st-info-card">
+        <div class="st-info-title">sarkari-tool.dozni.com</div>
+        <p class="st-info-text">
+          Sarkari Tool is an online product created to provide the latest and most useful
+          utilities. Like: image resizer, typing test, JPG to PDF converter, photo and
+          signature joiner, photo name and date joiner and more.
+        </p>
+      </div>
+    </section>
+  `;
+
   document.getElementById("st-header").innerHTML =
     header;
 
@@ -205,4 +306,12 @@ export function loadLayout() {
 
   document.getElementById("st-footer").innerHTML =
     footer;
+
+
+  const shared =
+    document.getElementById("stc-shared");
+  
+  if (shared) {
+    shared.innerHTML = sharedSections;
+  }
 }
