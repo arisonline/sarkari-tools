@@ -420,7 +420,7 @@ export function loadLayout() {
   }
 
   const shared =
-    document.getElementById("stc-section");
+    document.getElementById("stc-shareds");
   
   if (shared) {
     shared.innerHTML = sharedSections;
