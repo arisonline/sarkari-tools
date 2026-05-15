@@ -399,9 +399,14 @@ export function loadLayout() {
   document.getElementById("st-mobile-nav").innerHTML =
     mobileNav;
 
-  document.getElementById("st-footer").innerHTML =
-    footer;
 
+  const toolsSection =
+    document.getElementById("stc-other-tools");
+  
+  if (toolsSection) {
+    toolsSection.innerHTML =
+      otherToolsHTML;
+  }
 
   const shared =
     document.getElementById("stc-section");
@@ -409,4 +414,8 @@ export function loadLayout() {
   if (shared) {
     shared.innerHTML = sharedSections;
   }
+
+  document.getElementById("st-footer").innerHTML =
+    footer;
+
 }
