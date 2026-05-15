@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+    <div class="container">
+
+      <div class="form-container">
+
+        <label>Select Your Photo</label>
+
+        <input
+          type="file"
+          id="imgInput"
+          accept="image/*"
+        >
+
+        <label>Type Full Name</label>
+
+        <input
+          type="text"
+          id="name"
+          placeholder="Enter Your Full Name"
+        >
+
+        <label>Select Date</label>
+
+        <input
+          type="date"
+          id="date"
+        >
+
+        <button id="joinBtn">
+          Add
+        </button>
+
+      </div>
+
+      <div class="result">
+        <canvas
+          id="canvas"
+          width="295"
+          height="360"
+        ></canvas>
+      </div>
+
+    </div>
+
+  </main>
+
+  <div id="st-footer"></div>
+
+  <script
+    type="module"
+    src="/assets/js/core/app.js"
+  ></script>
+
+  <script
+    type="module"
+    src="/assets/js/core/theme.js"
+  ></script>
+
+  <script
+    type="module"
+    src="/assets/js/tools/name-date.js"
+  ></script>
+
+</body>
+</html>
