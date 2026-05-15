@@ -222,7 +222,7 @@ export function loadLayout() {
     },
   
     {
-      slug: "photo-sign-merge",
+      slug: "photo-sign-merger",
       url: "/tools/photo-sign-merge/",
       title: "Photo and Signature Merger",
       icon: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQGLdqMPy6mHH2_n-MPUTM8iYyEScE-azPmgKtDOpvU3amNgVIMmMhpNeCh4AmIGABd_dQCjNyzSQOBJfd9fHHOYPHmS9sf4DjmIZG4vIYqJ_sGpt7vfDijCYOLG0AQlKp-Q6sk6zfGf6kfeNMXAd1JLTurtjPPt9QiGiVhSIQfTo9mIxKqbFKr97C/w164-h200/photo_signature.jpg"
