@@ -203,37 +203,48 @@ export function loadLayout() {
 
 
 
-  const currentUrl =
-    window.location.href;
+  const currentPath =
+    window.location.pathname;
+  
+  const currentSlug =
+    currentPath
+      .split("/")
+      .filter(Boolean)
+      .pop();
   
   const toolsData = [
   
     {
-      url: "https://name-date-on-photo.dozni.com/",
-      title: "Name and Date on Photo",
+      slug: "name-date-on-photo",
+      url: "/tools/name-date-on-photo/",
+      title: "Name and date on photo",
       icon: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgysjfitvPDhRycDZUoutSFdVTC_WuvOHKVIFakfcB5X_W5sjw5hNO60grrxcgZY4rhJp6fsAH3hPGHqaRQ01WlBmJb1SKv4k-KonAIfpIQ9kj_ZI-tY1dlqZD0e91MOnPpa6e8Cr9VnyaWdhsLCN7VUUVrkI3Sm6DwaEq7UqdJadQVwnwkB_uU_Jf7kc/s512/dozni.com.webp"
     },
   
     {
-      url: "https://photo-sign-merge.dozni.com/",
+      slug: "photo-sign-merge",
+      url: "/tools/photo-sign-merge/",
       title: "Photo and Signature Merger",
       icon: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQGLdqMPy6mHH2_n-MPUTM8iYyEScE-azPmgKtDOpvU3amNgVIMmMhpNeCh4AmIGABd_dQCjNyzSQOBJfd9fHHOYPHmS9sf4DjmIZG4vIYqJ_sGpt7vfDijCYOLG0AQlKp-Q6sk6zfGf6kfeNMXAd1JLTurtjPPt9QiGiVhSIQfTo9mIxKqbFKr97C/w164-h200/photo_signature.jpg"
     },
   
     {
-      url: "https://age-calculator.dozni.com/",
+      slug: "age-calculator",
+      url: "/tools/age-calculator/",
       title: "Age Calculator",
       icon: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhzXpDz1vBqZlz6q9aLUesvh4oCPaQdxwHHabjE3OvfWXb6ezXPGi58Z54cT-4Si4pOwGBA5afFkfo3d4DHjHnfsbCoitVRo5CDCKHn-B7HG6RirgxAiBbr4G0UJFCtODJoLKjBtGmtfnRGRiyiuqmQ5xr7EWykwK_Tg5bBmiLr96LJengfJjM3Oshz/s320/age-calculator.png"
     },
   
     {
-      url: "https://image-to-pdf.dozni.com/",
+      slug: "image-to-pdf",
+      url: "/tools/image-to-pdf/",
       title: "Image To PDF File Converter",
       icon: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgI8YwwEAeHM0xrWIxsWOOM3BELsCaEYF9S5dDYLg0P28i1fUXUeO01S0z-nOHH4gazqYbNDzLkUuLloRGABN6wwKTy7cP_iboB1LjUPVoWaA3awPjTDeyC5sbJryaq3pRrDHvgmXJYAPxu07ndNSRi3jah4Ky85C8QT9xiWfiYKQJdO88l6840IvBh/s1600/image-to-pdf.png"
     },
   
     {
-      url: "https://image-resizer.dozni.com/",
+      slug: "image-resizer",
+      url: "/tools/image-resizer/",
       title: "Image Resizer",
       icon: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgI8YwwEAeHM0xrWIxsWOOM3BELsCaEYF9S5dDYLg0P28i1fUXUeO01S0z-nOHH4gazqYbNDzLkUuLloRGABN6wwKTy7cP_iboB1LjUPVoWaA3awPjTDeyC5sbJryaq3pRrDHvgmXJYAPxu07ndNSRi3jah4Ky85C8QT9xiWfiYKQJdO88l6840IvBh/s1600/image-to-pdf.png"
     }
@@ -241,9 +252,16 @@ export function loadLayout() {
   ];
   
   const otherTools =
-    toolsData.filter(
-      tool => tool.url !== currentUrl
-    );
+    toolsData.filter(tool => {
+  
+      const toolSlug =
+        new URL(tool.url)
+          .hostname
+          .split(".")[0];
+  
+      return toolSlug !== currentSlug;
+  
+  });
   
   const otherToolsHTML = `
   <section class="stc-section">
