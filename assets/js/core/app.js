@@ -199,6 +199,102 @@ export function loadLayout() {
 
 
 
+
+
+
+
+  const currentUrl =
+    window.location.href;
+  
+  const toolsData = [
+  
+    {
+      url: "https://name-date-on-photo.dozni.com/",
+      title: "Name and Date on Photo",
+      icon: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgysjfitvPDhRycDZUoutSFdVTC_WuvOHKVIFakfcB5X_W5sjw5hNO60grrxcgZY4rhJp6fsAH3hPGHqaRQ01WlBmJb1SKv4k-KonAIfpIQ9kj_ZI-tY1dlqZD0e91MOnPpa6e8Cr9VnyaWdhsLCN7VUUVrkI3Sm6DwaEq7UqdJadQVwnwkB_uU_Jf7kc/s512/dozni.com.webp"
+    },
+  
+    {
+      url: "https://photo-sign-merge.dozni.com/",
+      title: "Photo and Signature Merger",
+      icon: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQGLdqMPy6mHH2_n-MPUTM8iYyEScE-azPmgKtDOpvU3amNgVIMmMhpNeCh4AmIGABd_dQCjNyzSQOBJfd9fHHOYPHmS9sf4DjmIZG4vIYqJ_sGpt7vfDijCYOLG0AQlKp-Q6sk6zfGf6kfeNMXAd1JLTurtjPPt9QiGiVhSIQfTo9mIxKqbFKr97C/w164-h200/photo_signature.jpg"
+    },
+  
+    {
+      url: "https://age-calculator.dozni.com/",
+      title: "Age Calculator",
+      icon: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhzXpDz1vBqZlz6q9aLUesvh4oCPaQdxwHHabjE3OvfWXb6ezXPGi58Z54cT-4Si4pOwGBA5afFkfo3d4DHjHnfsbCoitVRo5CDCKHn-B7HG6RirgxAiBbr4G0UJFCtODJoLKjBtGmtfnRGRiyiuqmQ5xr7EWykwK_Tg5bBmiLr96LJengfJjM3Oshz/s320/age-calculator.png"
+    },
+  
+    {
+      url: "https://image-to-pdf.dozni.com/",
+      title: "Image To PDF File Converter",
+      icon: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgI8YwwEAeHM0xrWIxsWOOM3BELsCaEYF9S5dDYLg0P28i1fUXUeO01S0z-nOHH4gazqYbNDzLkUuLloRGABN6wwKTy7cP_iboB1LjUPVoWaA3awPjTDeyC5sbJryaq3pRrDHvgmXJYAPxu07ndNSRi3jah4Ky85C8QT9xiWfiYKQJdO88l6840IvBh/s1600/image-to-pdf.png"
+    },
+  
+    {
+      url: "https://image-resizer.dozni.com/",
+      title: "Image Resizer",
+      icon: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgI8YwwEAeHM0xrWIxsWOOM3BELsCaEYF9S5dDYLg0P28i1fUXUeO01S0z-nOHH4gazqYbNDzLkUuLloRGABN6wwKTy7cP_iboB1LjUPVoWaA3awPjTDeyC5sbJryaq3pRrDHvgmXJYAPxu07ndNSRi3jah4Ky85C8QT9xiWfiYKQJdO88l6840IvBh/s1600/image-to-pdf.png"
+    }
+  
+  ];
+  
+  const otherTools =
+    toolsData.filter(
+      tool => tool.url !== currentUrl
+    );
+  
+  const otherToolsHTML = `
+  <section class="stc-section">
+  
+    <h2 class="stc-title">
+      Other Sarkari Tools
+    </h2>
+  
+    <p class="stc-subtitle">
+      Use more free tools that help you complete government and competitive exam forms quickly.
+    </p>
+  
+    <div class="stc-card">
+  
+      <div class="stc-tools-grid">
+  
+        ${otherTools.map(tool => `
+  
+          <a
+            class="stc-tool-item"
+            href="${tool.url}"
+          >
+  
+            <span class="stc-chip-icon">
+  
+              <img
+                src="${tool.icon}"
+                alt="${tool.title}"
+              >
+  
+            </span>
+  
+            <span>
+              ${tool.title}
+            </span>
+  
+          </a>
+  
+        `).join("")}
+  
+      </div>
+  
+    </div>
+  
+  </section>
+  `;
+
+  
+
+
+
   const sharedSections = `
     <!-- 6. Why like Dozni -->
     <section class="stc-section">
