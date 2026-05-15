@@ -108,7 +108,93 @@ export function loadLayout() {
   `;
 
   const footer = `
-    YOUR FOOTER HTML
+    <div class="st-footer-wrapper">
+    <footer class="st-footer">
+      <div class="st-footer-grid">
+        <div>
+          <div class="st-footer-title">Dozni</div>
+          <div class="st-footer-links">
+            <a href="https://www.dozni.com/about-us">About Us</a>
+            <a href="https://www.dozni.com/contact-us">Contact Us</a>
+            <a href="https://www.dozni.com/privacy-policy">Privacy policy</a>
+            <a href="https://www.dozni.com/cookie-policy">Cookies Policy</a>
+            <a href="https://www.dozni.com/terms-and-conditions">Term and Conditions</a>
+            <a href="https://www.dozni.com/our-services">Our Tools and Services</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="st-footer-title">Products</div>
+          <div class="st-footer-links">
+            <a href="https://blog.dozni.com/">Blog</a>
+            <a href="https://event.dozni.com/">Event</a>
+            <a href="https://game.dozni.com/">Gaming</a>
+            <a href="https://bengali.dozni.com/">Bengali Blog</a>
+            <a href="https://digital-tool.dozni.com/">Digital Tools</a>
+            <a href="https://sarkari-tool.dozni.com/">Sarkari tools</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="st-footer-title">Sarkari Tools</div>
+          <div class="st-footer-links">
+            <a href="https://name-date-on-photo.dozni.com/">Name and Date on Photo</a>
+            <a href="https://photo-sign-merge.dozni.com/">Photo Sign Merge</a>
+            <a href="https://image-to-pdf.dozni.com/">Image to PDF</a>
+            <a href="https://image-resizer.dozni.com/">Image Resizer</a>
+            <a href="https://age-calculator.dozni.com/">Age Calculator</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="st-footer-title">Digital Tools</div>
+          <div class="st-footer-links">
+            <a href="https://browser-resolution.dozni.com/">Browser Resolution Tester</a>
+            <a href="https://screen-resolution.dozni.com/">Screen Resolution Detector</a>
+            <a href="https://percentage-calculator.dozni.com/">Percentage Calculator</a>
+            <a href="https://random-color.dozni.com/">Random Color Generator</a>
+            <a href="https://json-viewer.dozni.com/">JSON Viewer</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="st-footer-title">Get in touch</div>
+          <div class="st-footer-links">
+            <a href="mailto:contact@dozni.com">
+              <span class="st-footer-icon">
+                <i class="ri-mail-line"></i>
+              </span>Contact@dozni.com
+            </a>
+            <a href="https://www.facebook.com/idozni">
+              <span class="st-footer-icon">
+                <i class="ri-facebook-fill"></i>
+              </span>Facebook
+            </a>
+            <a href="https://x.com/idozni">
+              <span class="st-footer-icon">
+                <i class="ri-twitter-x-fill"></i>
+              </span>X (Formerly Twitter)
+            </a>
+            <a href="https://www.linkedin.com/in/arisonline/">
+              <span class="st-footer-icon">
+                <i class="ri-linkedin-box-fill"></i>
+              </span>LinkedIn
+            </a>
+            <a href="https://www.instagram.com/idozni/">
+              <span class="st-footer-icon">
+                <i class="ri-instagram-line"></i>
+              </span>Instagram
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="st-footer-bottom">
+        <hr>
+        © <span id="st-year"></span> Dozni &amp; Sarkari Tools. All rights reserved.
+      </div>
+    </footer>
+  </div>
   `;
 
   document.getElementById("st-header").innerHTML =
