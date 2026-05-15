@@ -279,9 +279,8 @@ export function loadLayout() {
           </div>
         </div>
       </div>
-    </section>
-  
-  </main>
+    </section>  
+
   
   
   
