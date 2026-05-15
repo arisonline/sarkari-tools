@@ -252,16 +252,9 @@ export function loadLayout() {
   ];
   
   const otherTools =
-    toolsData.filter(tool => {
-  
-      const toolSlug =
-        new URL(tool.url)
-          .hostname
-          .split(".")[0];
-  
-      return toolSlug !== currentSlug;
-  
-  });
+    toolsData.filter(
+      tool => tool.slug !== currentSlug
+  );
   
   const otherToolsHTML = `
   <section class="stc-section">
