@@ -1,1 +1,275 @@
-.
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <title>
+    Photo sign merger
+  </title>
+
+  <link
+    rel="stylesheet"
+    href="/assets/css/core.css"
+  >
+
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <div id="st-header"></div>
+
+  <!-- MOBILE NAV -->
+  <div id="st-mobile-nav"></div>
+
+  <!-- PAGE -->
+  <main class="st-page">
+
+    <h1 class="stc-title">
+      Add Name and Date on Photo
+    </h1>
+
+    <div class="container">
+      <div class="form-container">
+        <form id="myForm">
+          <label for="profile-image">Select Your Image</label> <br>
+          <input type="file" id="profile-image" name="profile-image" accept="image/*" onchange="previewProfileImage(event)" required><br><br>
+          <label for="signature-image">Select Signature Image</label> <br>
+          <input type="file" id="signature-image" name="signature-image" accept="image/*" onchange="previewSignatureImage(event)" required><br><br>
+          <button class="button" type="submit">Merge</button>
+        </form>
+      </div>
+      <div class="result">
+        <canvas id="preview-canvas"><div id="result"></div></canvas>
+      </div>
+    </div>
+
+    <!-- Other tools -->
+    <div id="stc-other-tools"></div>
+
+    <!-- SEO Contects -->
+      <section class="stc-section">
+        <h2 class="stc-title">Other Sarkari Tools</h2>
+        <p class="stc-subtitle">
+          Use more free tools that help you complete government and competitive exam forms quickly.
+        </p>
+    
+        <div class="stc-card">
+          <div class="stc-tools-grid">
+            <a class="stc-tool-item" href="https://name-date-on-photo.dozni.com/">
+              <span class="stc-chip-icon">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQ5S2tBz_q3H-6slg5ggkvlccfXMGPlAxodHL7EQSN9vWVSQq0rzmyVsD8ifkzv9qC1Djlv2YHK1HGzABIYqFBUA8ZW_4AkSwA0EduzIJGoUqI3hWLb8bKIdVSRSOXnStsHbDOZ-pbYgNhs6femaTqXAWVSKB9g_-aL4sm0917nDwJpp1n4MKDMhNJ/s360/photo-name-and-date.png" alt="name-and-date-on-photo">
+              </span>
+              <span>Name and Date on Photo Joiner</span>
+            </a>
+            <a class="stc-tool-item" href="https://age-calculator.dozni.com/">
+              <span class="stc-chip-icon">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhzXpDz1vBqZlz6q9aLUesvh4oCPaQdxwHHabjE3OvfWXb6ezXPGi58Z54cT-4Si4pOwGBA5afFkfo3d4DHjHnfsbCoitVRo5CDCKHn-B7HG6RirgxAiBbr4G0UJFCtODJoLKjBtGmtfnRGRiyiuqmQ5xr7EWykwK_Tg5bBmiLr96LJengfJjM3Oshz/s320/age-calculator.png" alt="age-calculator">
+              </span>
+              <span>Age Calculator</span>
+            </a>
+            <a class="stc-tool-item" href="https://image-to-pdf.dozni.com/">
+              <span class="stc-chip-icon">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgI8YwwEAeHM0xrWIxsWOOM3BELsCaEYF9S5dDYLg0P28i1fUXUeO01S0z-nOHH4gazqYbNDzLkUuLloRGABN6wwKTy7cP_iboB1LjUPVoWaA3awPjTDeyC5sbJryaq3pRrDHvgmXJYAPxu07ndNSRi3jah4Ky85C8QT9xiWfiYKQJdO88l6840IvBh/s1600/image-to-pdf.png" alt="JPG-to-PDF">
+              </span>
+              <span>Image To PDF File Converter</span>
+            </a>
+            <a class="stc-tool-item" href="https://image-resizer.dozni.com/">
+              <span class="stc-chip-icon">
+                <svg class="center-block img-responsive my-how-to-image" xmlns="http://www.w3.org/2000/svg" height="118px" viewBox="0 0 24 24" width="118px" fill="coral"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"/></svg>
+              </span>
+              <span>Image Resizer</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    
+      <!-- 2. Working process -->
+      <section class="stc-section">
+        <h2 class="stc-title">How does photo and signature merger work?</h2>
+    
+        <div class="stc-card">
+          <div class="stc-steps">
+            <div class="stc-step">
+              <div class="stc-step-number">1</div>
+              <div class="stc-step-body">
+                <div class="stc-step-title">Upload your photo</div>
+                <p>Upload your photo.</p>
+              </div>
+            </div>
+            <div class="stc-step">
+              <div class="stc-step-number">2</div>
+              <div class="stc-step-body">
+                <div class="stc-step-title">Upload your signature photo</div>
+                <p>After uploading photo, upload signature.</p>
+              </div>
+            </div>
+            <div class="stc-step">
+              <div class="stc-step-number">3</div>
+              <div class="stc-step-body">
+                <div class="stc-step-title">Merge</div>
+                <p>
+                  Onece photo and signature uploaded. Then click Merge button.
+                </p>
+              </div>
+            </div>
+            <div class="stc-step">
+              <div class="stc-step-number">4</div>
+              <div class="stc-step-body">
+                <div class="stc-step-title">Downloaded</div>
+                <p>
+                  Wait few seconds for the merging process. The merged file will be download automatically.
+                </p>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+      </section>
+    
+      <!-- 3. How to add -->
+      <section class="stc-section">
+        <h2 class="stc-title">How to merge photo and sign online?</h2>
+    
+        <div class="stc-card stc-how-grid">
+          <div>
+            <p>
+              You can easily merge photo and signature by using this free tool. This is the best way to merge your photo and signature online. It is completely free and secure.
+            </p>
+    <img
+      src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXruGU5stCoe2Nl3oRG0vcifEegKPfbmxsxdPyKPmksEddn3HEDsrUIhj4Ctl87yiXZFje13B45cYWso0a8_Du6ZmC_TUpxq7QgrmMEFMww6iI-B7YO_j7AFFsUr0SObYi5OfmrgMuqLxoGmkk8OuXEDV2__6fkV3bJ6OmqNNhmrHvP-QXDUgfAIrAaTk/s800/photo-sign-merger-dozni.webp"
+      alt="Merge photo and signature online free tool"
+      title="Merge Photo and Signature Online"
+      width="800"
+      height="450"
+      loading="lazy"
+      decoding="async"
+      style="
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+      "
+    />
+    
+    
+            <p>
+              First, select your photo. Then upload your signature, which you want to merge with the photo. You can see those uploaded images below. After that, click on the merge button below. This tool will automatically merge your photo and signature into a single photo. Finally, save the merge photo.
+            </p>
+          </div>
+    
+        </div>
+      </section>
+    
+      <!-- 4. Where to use -->
+      <section class="stc-section">
+        <h2 class="stc-title">Where to use it?</h2>
+        <p class="stc-subtitle">
+          Use this tool whenever a form asks for a photo with a signature printed on it.
+        </p>
+    
+        <div class="stc-card">
+          <div class="stc-usage-grid">
+            <div class="stc-usage-card">
+              <h3>Government recruitment and admission forms</h3>
+              <p>➜ In the Staff Selection Commission (SSC), the sections where photo and signature are required together are as follows:</p>
+              <ul>
+                <li>Combined Graduate Level</li>
+                <li>Stenographer Exam</li>
+                <li>Selection Post</li>
+                <li>Constable GD</li>
+                <li>Multi Tasking Staff MTS</li>
+                <li>CPO SI</li>
+                <li>Scientific Assistant</li>
+              </ul><br>
+              
+              <p>➜ In other government exams. Like:</p>
+              <ul>
+                <li>UPSC</li>
+                <li>PSC</li>
+                <li>WBCS</li>
+                <li>BANK RECRUITMENT</li>
+                <li>IB ACIO</li>
+              </ul><br>
+    
+              <p>➜ Teacher Eligibility Test Exam (TET) and Central Eligibility Test Exam (CTET).</p>
+    
+              <p>➜ Photo and signature are required in various railway recruitments.</p>
+    
+            </div>
+    
+            <div class="stc-usage-card">
+              <h3>Non-government &amp; private forms</h3>
+              <p>➜ Other non-government recruitments require a photo and signature together.</p>
+              <!--<ul>
+                <li>Private Banks Rearuitment</li>
+                <li>Public Sector Rearuitment</li>
+                <li>Others</li>
+              </ul>-->
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <!-- 5. Popular FAQ's -->
+      <section class="stc-section">
+        <h2 class="stc-title">Popular FAQ's related to photo & sign joiner (merger)</h2>
+    
+        <div class="stc-card stc-faq-wrapper" id="stc-faq-box">
+          <div class="stc-faq-item">
+            <button class="stc-faq-btn" type="button">
+              <span class="stc-faq-question">What types of photos and signatures does this tool support?</span>
+              <span class="stc-faq-icon">+</span>
+            </button>
+            <div class="stc-faq-answer">
+              <div class="stc-faq-answer-inner">
+                ➤ All types of photos and signatures will be supported. Like: PNG, JPG, JPEG, etc.
+              </div>
+            </div>
+          </div>
+    
+          <div class="stc-faq-item">
+            <button class="stc-faq-btn" type="button">
+              <span class="stc-faq-question">Is the merge photo and signature tool free?</span>
+              <span class="stc-faq-icon">+</span>
+            </button>
+            <div class="stc-faq-answer">
+              <div class="stc-faq-answer-inner">
+                ➤ Yes it is completely free.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+    <!-- AUTO SHARED -->
+    <div id="stc-shareds"></div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <div id="st-footer"></div>
+
+  <script type="module">
+
+    import { loadLayout }
+    from "/assets/js/core/app.js";
+
+    loadLayout();
+
+  </script>
+
+  <script
+    type="module"
+    src="/assets/js/tools/photo-sign.js"
+  ></script>
+
+</body>
+</html>
