@@ -37,48 +37,59 @@
     </h1>
 
     <div class="container">
-
+  
       <div class="form-container">
-
-        <label>Select Your Photo</label>
-
-        <input
-          type="file"
-          id="imgInput"
-          accept="image/*"
-        >
-
-        <label>Type Full Name</label>
-
+    
+        <label for="file">Select Your Photo</label>
+    
+        <div class="upload-container">
+          <input
+            type="file"
+            id="imgInput"
+            accept="image/*"
+            onchange="previewImage(event)"
+            required
+          >
+        </div>
+    
+        <label for="name">Type Full Name</label>
+    
         <input
           type="text"
           id="name"
           placeholder="Enter Your Full Name"
+          required
         >
-
-        <label>Select Date</label>
-
+    
+        <label for="date">Select Date</label>
+    
         <input
           type="date"
           id="date"
+          required
         >
-
-        <button id="joinBtn">
+    
+        <br>
+    
+        <button
+          class="button"
+          onclick="join()"
+        >
           Add
         </button>
-
+    
       </div>
-
+    
       <div class="result">
-
+    
         <canvas
           id="canvas"
           width="295"
           height="360"
         ></canvas>
-
+    
       </div>
-
+    
     </div>
 
     <!-- AUTO SHARED -->
