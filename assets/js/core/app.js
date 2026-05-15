@@ -77,7 +77,34 @@ export function loadLayout() {
   `;
 
   const mobileNav = `
-    YOUR MOBILE NAV HTML
+    <div class="st-nav-mobile">
+    <div class="st-nav-mobile-inner">
+      <div class="st-nav-mobile-group-title">Sarkari Tools</div>
+      <a href="https://name-date-on-photo.dozni.com/" class="st-nav-link">
+        Name and Date on Photo
+      </a>
+      <a href="https://photo-sign-merge.dozni.com/" class="st-nav-link">
+        Photo Sign Merge
+      </a>
+      <a href="https://image-to-pdf.dozni.com/" class="st-nav-link">
+        Image to PDF
+      </a>
+      <a href="https://image-resizer.dozni.com/" class="st-nav-link">
+        Image Resizer
+      </a>
+      <a href="https://age-calculator.dozni.com/" class="st-nav-link">
+        Age Calculator
+      </a>
+
+      <div class="st-nav-mobile-group-title">More</div>
+      <a href="https://blog.dozni.com/" class="st-nav-link">Blog</a>
+      <a href="https://www.dozni.com/contact-us" class="st-nav-link">Contact</a>
+
+      <button type="button" class="st-theme-toggle" onclick="toggleSTTheme()">
+        🌗 <span id="st-theme-label-mobile">Theme</span>
+      </button>
+    </div>
+  </div>
   `;
 
   const footer = `
