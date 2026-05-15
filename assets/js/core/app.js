@@ -218,7 +218,7 @@ export function loadLayout() {
       slug: "name-date-on-photo",
       url: "/tools/name-date-on-photo/",
       title: "Name and date on photo",
-      icon: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgysjfitvPDhRycDZUoutSFdVTC_WuvOHKVIFakfcB5X_W5sjw5hNO60grrxcgZY4rhJp6fsAH3hPGHqaRQ01WlBmJb1SKv4k-KonAIfpIQ9kj_ZI-tY1dlqZD0e91MOnPpa6e8Cr9VnyaWdhsLCN7VUUVrkI3Sm6DwaEq7UqdJadQVwnwkB_uU_Jf7kc/s512/dozni.com.webp"
+      icon: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQ5S2tBz_q3H-6slg5ggkvlccfXMGPlAxodHL7EQSN9vWVSQq0rzmyVsD8ifkzv9qC1Djlv2YHK1HGzABIYqFBUA8ZW_4AkSwA0EduzIJGoUqI3hWLb8bKIdVSRSOXnStsHbDOZ-pbYgNhs6femaTqXAWVSKB9g_-aL4sm0917nDwJpp1n4MKDMhNJ/s360/photo-name-and-date.png"
     },
   
     {
