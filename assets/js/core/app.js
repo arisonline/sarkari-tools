@@ -6,7 +6,7 @@ export function loadLayout() {
 
       <!-- LEFT: Brand -->
       <div class="st-header-left">
-        <a href="https://sarkari-tool.dozni.com/" class="st-brand">
+        <a href="/" class="st-brand">
           <div class="st-brand-logo">
             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgysjfitvPDhRycDZUoutSFdVTC_WuvOHKVIFakfcB5X_W5sjw5hNO60grrxcgZY4rhJp6fsAH3hPGHqaRQ01WlBmJb1SKv4k-KonAIfpIQ9kj_ZI-tY1dlqZD0e91MOnPpa6e8Cr9VnyaWdhsLCN7VUUVrkI3Sm6DwaEq7UqdJadQVwnwkB_uU_Jf7kc/s512/dozni.com.webp" alt="sarkari-tool-by-dozni.com-logo">
           </div>
@@ -25,23 +25,23 @@ export function loadLayout() {
               Tools
             </button>
             <div class="st-dropdown-menu">
-              <a href="https://name-date-on-photo.dozni.com/" class="st-dropdown-link">
+              <a href="/tools/name-date-on-photo/" class="st-dropdown-link">
                 <span>Name and Date on Photo</span>
                 <small>Add text &amp; date on images</small>
               </a>
-              <a href="https://photo-sign-merge.dozni.com/" class="st-dropdown-link">
+              <a href="/tools/photo-sign-merger/" class="st-dropdown-link">
                 <span>Photo Sign Merge</span>
                 <small>Join photo &amp; signature</small>
               </a>
-              <a href="https://image-to-pdf.dozni.com/" class="st-dropdown-link">
+              <a href="/tools/image-to-pdf/" class="st-dropdown-link">
                 <span>Image to PDF</span>
                 <small>Convert JPG / PNG to PDF</small>
               </a>
-              <a href="https://image-resizer.dozni.com/" class="st-dropdown-link">
+              <a href="/tools/image-resizer/" class="st-dropdown-link">
                 <span>Image Resizer</span>
                 <small>Resize for exam upload</small>
               </a>
-              <a href="https://age-calculator.dozni.com/" class="st-dropdown-link">
+              <a href="/tools/age-calculator/" class="st-dropdown-link">
                 <span>Age Calculator</span>
                 <small>Check age from DOB</small>
               </a>
@@ -53,7 +53,7 @@ export function loadLayout() {
           </div>
 
           <div class="st-nav-item">
-            <a href="https://www.dozni.com/contact-us" class="st-nav-link">
+            <a href="/contact-us" class="st-nav-link">
               Contact
             </a>
           </div>
@@ -80,25 +80,25 @@ export function loadLayout() {
     <div class="st-nav-mobile">
     <div class="st-nav-mobile-inner">
       <div class="st-nav-mobile-group-title">Sarkari Tools</div>
-      <a href="https://name-date-on-photo.dozni.com/" class="st-nav-link">
+      <a href="/tools/name-date-on-photo/" class="st-nav-link">
         Name and Date on Photo
       </a>
-      <a href="https://photo-sign-merge.dozni.com/" class="st-nav-link">
+      <a href="/tools/photo-sign-merger/" class="st-nav-link">
         Photo Sign Merge
       </a>
-      <a href="https://image-to-pdf.dozni.com/" class="st-nav-link">
+      <a href="/tools/image-to-pdf/" class="st-nav-link">
         Image to PDF
       </a>
-      <a href="https://image-resizer.dozni.com/" class="st-nav-link">
+      <a href="/tools/image-resizer/" class="st-nav-link">
         Image Resizer
       </a>
-      <a href="https://age-calculator.dozni.com/" class="st-nav-link">
+      <a href="/tools/age-calculator/" class="st-nav-link">
         Age Calculator
       </a>
 
       <div class="st-nav-mobile-group-title">More</div>
       <a href="https://blog.dozni.com/" class="st-nav-link">Blog</a>
-      <a href="https://www.dozni.com/contact-us" class="st-nav-link">Contact</a>
+      <a href="/contact-us" class="st-nav-link">Contact</a>
 
       <button type="button" class="st-theme-toggle" onclick="toggleSTTheme()">
         🌗 <span id="st-theme-label-mobile">Theme</span>
@@ -131,18 +131,18 @@ export function loadLayout() {
             <a href="https://game.dozni.com/">Gaming</a>
             <a href="https://bengali.dozni.com/">Bengali Blog</a>
             <a href="https://digital-tool.dozni.com/">Digital Tools</a>
-            <a href="https://sarkari-tool.dozni.com/">Sarkari tools</a>
+            <a href="/">Sarkari tools</a>
           </div>
         </div>
 
         <div>
           <div class="st-footer-title">Sarkari Tools</div>
           <div class="st-footer-links">
-            <a href="https://name-date-on-photo.dozni.com/">Name and Date on Photo</a>
-            <a href="https://photo-sign-merge.dozni.com/">Photo Sign Merge</a>
-            <a href="https://image-to-pdf.dozni.com/">Image to PDF</a>
-            <a href="https://image-resizer.dozni.com/">Image Resizer</a>
-            <a href="https://age-calculator.dozni.com/">Age Calculator</a>
+            <a href="/tools/name-date-on-photo/">Name and Date on Photo</a>
+            <a href="/tools/photo-sign-merger/">Photo Sign Merge</a>
+            <a href="/tools/image-to-pdf/">Image to PDF</a>
+            <a href="/tools/image-resizer/">Image Resizer</a>
+            <a href="/tools/age-calculator/">Age Calculator</a>
           </div>
         </div>
 
@@ -309,7 +309,7 @@ export function loadLayout() {
   const sharedSections = `
     <!-- 6. Why like Dozni -->
     <section class="stc-section">
-      <h2 class="stc-title">Why like sarkari-tool.dozni.com?</h2>
+      <h2 class="stc-title">Why like sarkari.dozni.com?</h2>
   
       <div class="stc-card" style="text-align:center;">
         <p style="font-size:18px;color:#3f3f3f;margin:0 0 10px;">
@@ -394,7 +394,7 @@ export function loadLayout() {
     <!-- INFO SECTION -->
     <section class="st-info-wrapper">
       <div class="st-info-card">
-        <div class="st-info-title">sarkari-tool.dozni.com</div>
+        <div class="st-info-title">sarkari.dozni.com</div>
         <p class="st-info-text">
           Sarkari Tool is an online product created to provide the latest and most useful
           utilities. Like: image resizer, typing test, JPG to PDF converter, photo and
