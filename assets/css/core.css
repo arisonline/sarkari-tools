@@ -1164,3 +1164,151 @@ canvas {
     width: 250px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================
+   AGE CALCULATOR — MODERN UI
+   Fully Responsive + Theme Safe
+   ========================== */
+
+.my-age {
+  background: var(--st-surface);
+  width: 100%;
+  max-width: 420px;
+  padding: 28px;
+  margin: 30px auto;
+  border-radius: 16px;
+  border: 1px solid var(--st-border);
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.18);
+  text-align: center;
+}
+
+
+
+/* Label */
+.my-age label {
+  color: var(--st-text-main);
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  display: block;
+}
+
+/* Date input */
+.my-age input[type="date"] {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid var(--st-border);
+  background: var(--st-surface-soft);
+  color: var(--st-text-main);
+  font-size: 16px;
+  outline: none;
+  transition: border .25s ease, box-shadow .25s ease;
+}
+
+/* Input focus */
+.my-age input[type="date"]:focus {
+  border-color: var(--st-accent);
+  box-shadow: 0 0 0 2px var(--st-accent);
+}
+
+/* Calculate Button */
+.my-age button {
+  margin-top: 18px;
+  padding: 12px 26px;
+  background: var(--st-accent);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 600;
+  transition: background 0.25s ease, transform 0.1s ease, box-shadow 0.25s;
+  width: 100%;
+}
+
+.my-age button:hover {
+  background: var(--st-accent-strong);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(37, 99, 235, 0.35);
+}
+
+/* Result text */
+#result, #timeResult {
+  margin-top: 18px;
+  color: var(--st-text-main);
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.4;
+  text-align: left;
+}
+
+/* ==========================
+   RESPONSIVE BREAKPOINTS
+   ========================== */
+
+/* Large Tablets / Small Laptops */
+@media (max-width: 1024px) {
+  .my-age {
+    max-width: 480px;
+    padding: 26px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .my-age {
+    max-width: 420px;
+    padding: 24px;
+  }
+  .my-age button {
+    font-size: 16px;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+  .my-age {
+    max-width: 90%;
+    padding: 20px;
+    border-radius: 14px;
+  }
+
+  .my-age input[type="date"] {
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  .my-age button {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  #result, #timeResult {
+    font-size: 16px;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 360px) {
+  .my-age {
+    padding: 18px;
+  }
+  .my-age label {
+    font-size: 16px;
+  }
+}
