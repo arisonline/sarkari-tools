@@ -8,7 +8,7 @@ export function loadLayout() {
       <div class="st-header-left">
         <a href="/" class="st-brand">
           <div class="st-brand-logo">
-            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgysjfitvPDhRycDZUoutSFdVTC_WuvOHKVIFakfcB5X_W5sjw5hNO60grrxcgZY4rhJp6fsAH3hPGHqaRQ01WlBmJb1SKv4k-KonAIfpIQ9kj_ZI-tY1dlqZD0e91MOnPpa6e8Cr9VnyaWdhsLCN7VUUVrkI3Sm6DwaEq7UqdJadQVwnwkB_uU_Jf7kc/s512/dozni.com.webp" alt="sarkari-tool-by-dozni.com-logo">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgysjfitvPDhRycDZUoutSFdVTC_WuvOHKVIFakfcB5X_W5sjw5hNO60grrxcgZY4rhJp6fsAH3hPGHqaRQ01WlBmJb1SKv4k-KonAIfpIQ9kj_ZI-tY1dlqZD0e91MOnPpa6e8Cr9VnyaWdhsLCN7VUUVrkI3Sm6DwaEq7UqdJadQVwnwkB_uU_Jf7kc/s96/dozni.com.webp" alt="sarkari-tool-by-dozni.com-logo">
           </div>
           <div>
             <div class="st-brand-main">Sarkari Tools</div>
@@ -218,35 +218,35 @@ export function loadLayout() {
       slug: "name-date-on-photo",
       url: "/tools/name-date-on-photo/",
       title: "Name and date on photo",
-      icon: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQ5S2tBz_q3H-6slg5ggkvlccfXMGPlAxodHL7EQSN9vWVSQq0rzmyVsD8ifkzv9qC1Djlv2YHK1HGzABIYqFBUA8ZW_4AkSwA0EduzIJGoUqI3hWLb8bKIdVSRSOXnStsHbDOZ-pbYgNhs6femaTqXAWVSKB9g_-aL4sm0917nDwJpp1n4MKDMhNJ/s360/photo-name-and-date.png"
+      icon: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQ5S2tBz_q3H-6slg5ggkvlccfXMGPlAxodHL7EQSN9vWVSQq0rzmyVsD8ifkzv9qC1Djlv2YHK1HGzABIYqFBUA8ZW_4AkSwA0EduzIJGoUqI3hWLb8bKIdVSRSOXnStsHbDOZ-pbYgNhs6femaTqXAWVSKB9g_-aL4sm0917nDwJpp1n4MKDMhNJ/s128/photo-name-and-date.png"
     },
   
     {
       slug: "photo-sign-merger",
       url: "/tools/photo-sign-merger/",
       title: "Photo and Signature Merger",
-      icon: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQGLdqMPy6mHH2_n-MPUTM8iYyEScE-azPmgKtDOpvU3amNgVIMmMhpNeCh4AmIGABd_dQCjNyzSQOBJfd9fHHOYPHmS9sf4DjmIZG4vIYqJ_sGpt7vfDijCYOLG0AQlKp-Q6sk6zfGf6kfeNMXAd1JLTurtjPPt9QiGiVhSIQfTo9mIxKqbFKr97C/w164-h200/photo_signature.jpg"
+      icon: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQGLdqMPy6mHH2_n-MPUTM8iYyEScE-azPmgKtDOpvU3amNgVIMmMhpNeCh4AmIGABd_dQCjNyzSQOBJfd9fHHOYPHmS9sf4DjmIZG4vIYqJ_sGpt7vfDijCYOLG0AQlKp-Q6sk6zfGf6kfeNMXAd1JLTurtjPPt9QiGiVhSIQfTo9mIxKqbFKr97C/w128-h200/photo_signature.jpg"
     },
   
     {
       slug: "age-calculator",
       url: "/tools/age-calculator/",
       title: "Age Calculator",
-      icon: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhzXpDz1vBqZlz6q9aLUesvh4oCPaQdxwHHabjE3OvfWXb6ezXPGi58Z54cT-4Si4pOwGBA5afFkfo3d4DHjHnfsbCoitVRo5CDCKHn-B7HG6RirgxAiBbr4G0UJFCtODJoLKjBtGmtfnRGRiyiuqmQ5xr7EWykwK_Tg5bBmiLr96LJengfJjM3Oshz/s320/age-calculator.png"
+      icon: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhzXpDz1vBqZlz6q9aLUesvh4oCPaQdxwHHabjE3OvfWXb6ezXPGi58Z54cT-4Si4pOwGBA5afFkfo3d4DHjHnfsbCoitVRo5CDCKHn-B7HG6RirgxAiBbr4G0UJFCtODJoLKjBtGmtfnRGRiyiuqmQ5xr7EWykwK_Tg5bBmiLr96LJengfJjM3Oshz/s128/age-calculator.png"
     },
   
     {
       slug: "image-to-pdf",
       url: "/tools/image-to-pdf/",
       title: "Image To PDF File Converter",
-      icon: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgI8YwwEAeHM0xrWIxsWOOM3BELsCaEYF9S5dDYLg0P28i1fUXUeO01S0z-nOHH4gazqYbNDzLkUuLloRGABN6wwKTy7cP_iboB1LjUPVoWaA3awPjTDeyC5sbJryaq3pRrDHvgmXJYAPxu07ndNSRi3jah4Ky85C8QT9xiWfiYKQJdO88l6840IvBh/s1600/image-to-pdf.png"
+      icon: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgI8YwwEAeHM0xrWIxsWOOM3BELsCaEYF9S5dDYLg0P28i1fUXUeO01S0z-nOHH4gazqYbNDzLkUuLloRGABN6wwKTy7cP_iboB1LjUPVoWaA3awPjTDeyC5sbJryaq3pRrDHvgmXJYAPxu07ndNSRi3jah4Ky85C8QT9xiWfiYKQJdO88l6840IvBh/s128/image-to-pdf.png"
     },
   
     {
       slug: "image-resizer",
       url: "/tools/image-resizer/",
       title: "Image Resizer",
-      icon: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgI8YwwEAeHM0xrWIxsWOOM3BELsCaEYF9S5dDYLg0P28i1fUXUeO01S0z-nOHH4gazqYbNDzLkUuLloRGABN6wwKTy7cP_iboB1LjUPVoWaA3awPjTDeyC5sbJryaq3pRrDHvgmXJYAPxu07ndNSRi3jah4Ky85C8QT9xiWfiYKQJdO88l6840IvBh/s1600/image-to-pdf.png"
+      icon: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgI8YwwEAeHM0xrWIxsWOOM3BELsCaEYF9S5dDYLg0P28i1fUXUeO01S0z-nOHH4gazqYbNDzLkUuLloRGABN6wwKTy7cP_iboB1LjUPVoWaA3awPjTDeyC5sbJryaq3pRrDHvgmXJYAPxu07ndNSRi3jah4Ky85C8QT9xiWfiYKQJdO88l6840IvBh/s128/image-to-pdf.png"
     }
   
   ];
