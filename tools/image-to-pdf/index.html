@@ -204,12 +204,72 @@
 
   </script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.2.61/jspdf.min.js"></script>
+  <script>
 
-  <script
-    type="module"
-    src="/assets/js/tools/img-pdf.js"
-  ></script>
+    (function () {
+    
+      const input =
+        document.getElementById("image-files");
+    
+      if (!input) return;
+    
+      let loaded = false;
+    
+      async function loadScripts() {
+    
+        if (loaded) return;
+    
+        loaded = true;
+    
+        // LOAD JSPDF
+        await new Promise((resolve, reject) => {
+    
+          const jspdf =
+            document.createElement("script");
+    
+          jspdf.src =
+            "https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.2.61/jspdf.min.js";
+    
+          jspdf.onload = resolve;
+    
+          jspdf.onerror = reject;
+    
+          document.body.appendChild(jspdf);
+    
+        });
+    
+        // LOAD TOOL JS
+        await new Promise((resolve, reject) => {
+    
+          const tool =
+            document.createElement("script");
+    
+          tool.src =
+            "/assets/js/tools/img-pdf.js";
+    
+          tool.onload = resolve;
+    
+          tool.onerror = reject;
+    
+          document.body.appendChild(tool);
+    
+        });
+    
+        // re-trigger change
+        input.dispatchEvent(
+          new Event("change")
+        );
+    
+      }
+    
+      input.addEventListener(
+        "click",
+        loadScripts,
+        { once: true }
+      );
+    
+    })();
+    </script>
 
 </body>
 </html>
