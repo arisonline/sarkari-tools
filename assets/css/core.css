@@ -1452,3 +1452,154 @@ canvas {
     max-height: 140px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========
+   LAYOUT WRAPPER
+   ========== */
+
+.container-img-resizer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 90%;
+}
+
+/* ==========
+   LEFT: FORM CARD
+   ========== */
+
+.form-container-img-resizer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 25px;
+  border-radius: 10px;
+  width: 300px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+
+.form-container-img-resizer form {
+  width: 100%;
+}
+
+/* Labels inside form */
+.form-container-img-resizer label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+/* Text/date inputs in original CSS (kept in case you add later) */
+.form-container-img-resizer input[type="date"],
+.form-container-img-resizer input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,.1);
+}
+
+/* Submit button */
+.form-container-img-resizer .button {
+  background-color: #38b6ff;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color .3s ease-in-out;
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.form-container-img-resizer .button:hover {
+  background-color: #0a87cf;
+}
+
+/* ==========
+   FILE INPUT + SELECT + NUMBER INPUTS
+   ========== */
+
+#resize-type,
+input[type="file"],
+input[type="number"] {
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #555;
+}
+
+/* File input font size */
+input[type="file"] {
+  font-size: 16px;
+}
+
+/* Select + number font size */
+#resize-type,
+input[type="number"] {
+  font-size: 20px;
+}
+
+/* File input button */
+input[type="file"]::file-selector-button {
+  margin-right: 20px;
+  border: none;
+  background: #38b6ff;
+  padding: 10px 20px;
+  color: #fff;
+  cursor: pointer;
+  transition: background .2s ease-in-out;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background: #0a87cf;
+}
+
+/* ==========
+   RIGHT: RESULT / PREVIEW BOX
+   ========== */
+
+.my-result {
+  display: none;
+  margin: 25px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Preview image inside result */
+.my-result img {
+  width: 295px;
+  height: 100%;
+}
+
+/* Responsive image width on small screens */
+@media (max-width: 400px) {
+  .my-result img {
+    width: 250px;
+    margin-top: 0;
+  }
+}
