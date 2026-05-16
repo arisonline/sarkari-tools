@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <title>
+    Online image resizer
+  </title>
+
+  <link
+    rel="stylesheet"
+    href="/assets/css/core.css"
+  >
+
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <div id="st-header"></div>
+
+  <!-- MOBILE NAV -->
+  <div id="st-mobile-nav"></div>
+
+  <!-- PAGE -->
+  <main class="st-page">
+
+    <h1 class="stc-title">
+      Online image resizer
+    </h1>
+
+    <div class="container">
+                  
+      <div class="form-container">
+        <form>
+          <label for="image">Choose an Image</label>
+          <div class="upload-container">
+          <input type="file" id="image" name="image" accept="image/*" required onchange="previewImage(event)">
+          </div>
+
+
+          <label for="resize-type">Image Resize Options</label>
+          <select id="resize-type" onchange="showOptions()">
+            <option value="dimensions">By Dimensions</option>
+            <option value="kb">Manual Size in Kilobyte (KB)</option>
+            <option value="percentage">Size as Percentage (%)</option>
+          </select>
+
+          <div id="dimensions-option" class="option">
+            <label for="width">Width:</label>
+            <input type="number" id="width" name="width" min="1" value="300">
+
+            <label for="height">Height:</label>
+            <input type="number" id="height" name="height" min="1" value="380">
+          </div>
+
+          <div id="kb-option" class="option" style="display:none;">
+            <label for="kb-size">Select Kilobyte (KB)</label>
+            <input type="number" id="kb-size" name="kb-size" min="1" value="100">
+          </div>
+
+          <div id="percentage-option" class="option" style="display:none;">
+            <label for="percentage">Select Percentage (%)</label>
+            <input type="number" id="percentage" name="percentage" min="35" max="100" value="35">
+          </div><br>
+
+          <button class="button" type="submit" onclick="resizeImage()">Resize Image</button>
+        </form>
+        </div>
+
+            <div class="my-result" width="295" height="360">
+                <div id="preview"></div>
+
+                <div id="result"></div>
+            </div>
+      </div>
+
+    <br><br><br>
+
+
+    <!-- Other tools -->
+    <div id="stc-other-tools"></div>
+
+    <!-- SEO Contects -->
+         <section class="stc-section" id="how-to-use">
+            <h2 class="stc-title">How to use image resizer?</h2>
+        
+            <div class="stc-card">
+              <div class="stc-steps">
+                <div class="stc-step">
+                  <div class="stc-step-number">1</div>
+                  <div class="stc-step-body">
+                    <div class="stc-step-title">Upload image</div>
+                    <p>Upload image/images that you want to resize.</p>
+                  </div>
+                </div>
+                <div class="stc-step">
+                  <div class="stc-step-number">2</div>
+                  <div class="stc-step-body">
+                    <div class="stc-step-title">See preview</div>
+                    <p>After uploading you can easily see the images below.</p>
+                  </div>
+                </div>
+                <div class="stc-step">
+                  <div class="stc-step-number">3</div>
+                  <div class="stc-step-body">
+                    <div class="stc-step-title">Select resize option</div>
+                    <p>Now, select image resize option as you wish (Image resizing options are: resize as percentage, manual size in kilobytes, and by dimensions).</p>
+                  </div>
+                </div>
+                <div class="stc-step">
+                  <div class="stc-step-number">4</div>
+                  <div class="stc-step-body">
+                    <div class="stc-step-title">Adjust resizing parameters</div>
+                    <p>Adjust the resizing parameters. Like width, height, percentage, KB, etc.</p>
+                  </div>
+                </div>
+                <div class="stc-step">
+                  <div class="stc-step-number">5</div>
+                  <div class="stc-step-body">
+                    <div class="stc-step-title">Resize</div>
+                    <p>Click the "Resize Image" button to resize your images online.</p>
+                  </div>
+                </div>
+                <div class="stc-step">
+                  <div class="stc-step-number">6</div>
+                  <div class="stc-step-body">
+                    <div class="stc-step-title">Download resized image</div>
+                    <p>Wait for few seconds. Then your resized image will automatically downloaded.</p>
+                  </div>
+                </div>
+                
+               </div>
+        
+            </div>
+          </section>
+        
+          <!-- 3. How to add -->
+          <section class="stc-section">
+            <h2 class="stc-title">How to resize images online?</h2>
+        
+            <div class="stc-card stc-how-grid">
+              <div>
+                <p>You can easily resize any image by using this free tool. This is the best way to resizing image on this best website. It’s simple and easy to use.</p>
+                <p>With this image resizer tool, you can resize any image size as you want. This is the best way to resize images online. For resizing image, you have to select the image first. After selecting image on this tool, you can see this tool will automatically display the real size of the uploaded image. You can also see there are three resizing options available. Now select an option for resizing image as you wish. Like, you can select the dimensions option (by changing width and height), Etc. Also, you can resize kilobytes and percentage of the image by entering a value. Now, you can easily download resized image one by one. Finally, use this image resize tool and resize images as you wish.</p>
+              </div>
+        
+            </div>
+          </section>
+        
+          <!-- 4. Where to use -->
+          <section class="stc-section" id="where-to-use">
+            <h2 class="stc-title">Where to use it?</h2>
+            <p class="stc-subtitle">
+              Use this tool whenever you need to resize images for free online.
+            </p>
+        
+            <div class="stc-card stc-how-grid">
+              <div>
+                <p>
+                    You can easily resize image file by using this free tool. Sign-up not requared, It’s fast and simple image resizer.
+                </p>
+              </div>
+        
+            </div>
+          </section>
+        
+          <!-- 5. Popular FAQ's -->
+          <section class="stc-section" id="faq">
+            <h2 class="stc-title">Popular FAQ's related to image resizer</h2>
+        
+            <div class="stc-card stc-faq-wrapper" id="stc-faq-box">
+              <div class="stc-faq-item">
+                <button class="stc-faq-btn" type="button">
+                  <span class="stc-faq-question">Who can use this image resizer tool?</span>
+                  <span class="stc-faq-icon">+</span>
+                </button>
+                <div class="stc-faq-answer">
+                  <div class="stc-faq-answer-inner">
+                    ➤ Everyone can use it. You can use it, and tell your friends, family, others to use our online PDF converter.
+                  </div>
+                </div>
+              </div>
+        
+              <div class="stc-faq-item">
+                <button class="stc-faq-btn" type="button">
+                  <span class="stc-faq-question">Is this tool free?</span>
+                  <span class="stc-faq-icon">+</span>
+                </button>
+                <div class="stc-faq-answer">
+                  <div class="stc-faq-answer-inner">
+                    ➤ Yes it is completely free. No sign-up.
+                  </div>
+                </div>
+              </div>
+        
+              <div class="stc-faq-item">
+                <button class="stc-faq-btn" type="button">
+                  <span class="stc-faq-question">Is this online tool safe?</span>
+                  <span class="stc-faq-icon">+</span>
+                </button>
+                <div class="stc-faq-answer">
+                  <div class="stc-faq-answer-inner">
+                    ➤ Yes, it is safe, sequre and trusted. Our tool do not collect any info, data. We do not store/sell any data.
+                  </div>
+                </div>
+              </div>
+        
+            </div>
+         </section>
+    
+    <!-- AUTO SHARED -->
+    <div id="stc-shareds"></div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <div id="st-footer"></div>
+
+  <script type="module">
+
+    import { loadLayout }
+    from "/assets/js/core/app.js";
+
+    loadLayout();
+
+  </script>
+
+  <script
+    type="module"
+    src="/assets/js/tools/img-resizer.js"
+  ></script>
+
+</body>
+</html>
