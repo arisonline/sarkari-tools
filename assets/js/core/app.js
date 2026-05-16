@@ -114,12 +114,12 @@ export function loadLayout() {
         <div>
           <div class="st-footer-title">Dozni</div>
           <div class="st-footer-links">
-            <a href="https://www.dozni.com/about-us">About Us</a>
-            <a href="https://www.dozni.com/contact-us">Contact Us</a>
-            <a href="https://www.dozni.com/privacy-policy">Privacy policy</a>
-            <a href="https://www.dozni.com/cookie-policy">Cookies Policy</a>
-            <a href="https://www.dozni.com/terms-and-conditions">Term and Conditions</a>
-            <a href="https://www.dozni.com/our-services">Our Tools and Services</a>
+            <a href="/about-us">About Us</a>
+            <a href="/contact-us">Contact Us</a>
+            <a href="/privacy-policy">Privacy policy</a>
+            <a href="/cookie-policy">Cookies Policy</a>
+            <a href="/terms-and-conditions">Term and Conditions</a>
+            <a href="/dmca">Dmca</a>
           </div>
         </div>
 
