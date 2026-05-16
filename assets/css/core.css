@@ -1333,6 +1333,15 @@ canvas {
    PDF TOOL WRAPPER
    ========== */
 
+.container-img-pdf {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: var(--st-surface, #ffffff);
+  border-radius: 10px;
+  border: 1px solid var(--st-border, #e5e7eb);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+}
 
 /* Form area */
 .form {
@@ -1429,6 +1438,11 @@ canvas {
    ========== */
 
 @media (max-width: 600px) {
+  .container-img-pdf {
+    margin: 10px;
+    padding: 16px;
+  }
+
   .form .button {
     font-size: 16px;
   }
