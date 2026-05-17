@@ -401,7 +401,7 @@ export function loadLayout() {
           signature joiner, photo name and date joiner and more.
         </p>
 
-        <p>This website is a private tool platform and is not affiliated with any government organization.</p>
+        <p class="st-info-text">This website is a private tool platform and is not affiliated with any government organization.</p>
       </div>
     </section>
   `;
