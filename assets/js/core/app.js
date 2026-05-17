@@ -119,7 +119,7 @@ export function loadLayout() {
             <a href="/privacy-policy">Privacy policy</a>
             <a href="/cookie-policy">Cookies Policy</a>
             <a href="/terms-and-conditions">Term and Conditions</a>
-            <a href="/dmca">Dmca</a>
+            <a href="/dmca">DMCA</a>
           </div>
         </div>
 
@@ -430,3 +430,256 @@ export function loadLayout() {
     footer;
 
 }
+
+
+
+
+
+
+
+
+// =========================
+// THEME + MOBILE NAV
+// =========================
+
+(function () {
+
+  var root =
+    document.documentElement;
+
+  // THEME INIT
+  var saved =
+    localStorage.getItem("st-theme");
+
+  if (saved === "light" || saved === "dark") {
+
+    root.setAttribute(
+      "data-theme",
+      saved
+    );
+
+  } else {
+
+    root.setAttribute(
+      "data-theme",
+      "light"
+    );
+
+  }
+
+  function updateThemeLabels() {
+
+    var current =
+      root.getAttribute("data-theme") || "light";
+
+    var text =
+      current === "light"
+        ? "Light Mode"
+        : "Dark Mode";
+
+    var desktop =
+      document.getElementById("st-theme-label");
+
+    var mobile =
+      document.getElementById("st-theme-label-mobile");
+
+    if (desktop)
+      desktop.textContent = text;
+
+    if (mobile)
+      mobile.textContent = text;
+
+  }
+
+  window.toggleSTTheme =
+    function () {
+
+      var current =
+        root.getAttribute("data-theme") || "light";
+
+      var next =
+        current === "light"
+          ? "dark"
+          : "light";
+
+      root.setAttribute(
+        "data-theme",
+        next
+      );
+
+      localStorage.setItem(
+        "st-theme",
+        next
+      );
+
+      updateThemeLabels();
+
+    };
+
+  // MOBILE MENU
+
+  function setNavOpen(open) {
+
+    var header =
+      document.querySelector(".st-header");
+
+    var btn =
+      document.querySelector(".st-nav-toggle");
+
+    if (!header || !btn)
+      return;
+
+    header.setAttribute(
+      "data-open",
+      open ? "true" : "false"
+    );
+
+    btn.textContent =
+      open ? "✕" : "☰";
+
+    document.body.classList.toggle(
+      "st-no-scroll",
+      open
+    );
+
+  }
+
+  window.toggleSTNav =
+    function () {
+
+      var header =
+        document.querySelector(".st-header");
+
+      if (!header)
+        return;
+
+      var isOpen =
+        header.getAttribute("data-open") === "true";
+
+      setNavOpen(!isOpen);
+
+    };
+
+  function initMobileNavLinkClose() {
+
+    var links =
+      document.querySelectorAll(
+        ".st-nav-mobile a, .st-nav-mobile button.st-theme-toggle"
+      );
+
+    links.forEach(function (el) {
+
+      el.addEventListener(
+        "click",
+        function () {
+
+          setNavOpen(false);
+
+        }
+      );
+
+    });
+
+  }
+
+  document.addEventListener(
+    "DOMContentLoaded",
+    function () {
+
+      updateThemeLabels();
+
+      initMobileNavLinkClose();
+
+      var yearSpan =
+        document.getElementById("st-year");
+
+      if (yearSpan) {
+
+        yearSpan.textContent =
+          new Date().getFullYear();
+
+      }
+
+    }
+  );
+
+})();
+
+
+// =========================
+// FAQ ACCORDION
+// =========================
+
+(function () {
+
+  document.addEventListener(
+    "click",
+    function (e) {
+
+      var btn =
+        e.target.closest(".stc-faq-btn");
+
+      if (!btn)
+        return;
+
+      var item =
+        btn.closest(".stc-faq-item");
+
+      var box =
+        btn.closest("#stc-faq-box");
+
+      if (!item || !box)
+        return;
+
+      var items =
+        box.querySelectorAll(".stc-faq-item");
+
+      var icon =
+        item.querySelector(".stc-faq-icon");
+
+      var answer =
+        item.querySelector(".stc-faq-answer");
+
+      var isActive =
+        item.classList.contains("stc-active");
+
+      // CLOSE ALL
+      items.forEach(function (it) {
+
+        it.classList.remove("stc-active");
+
+        var ic =
+          it.querySelector(".stc-faq-icon");
+
+        var ans =
+          it.querySelector(".stc-faq-answer");
+
+        if (ic)
+          ic.textContent = "+";
+
+        if (ans)
+          ans.style.maxHeight = "0";
+
+      });
+
+      // OPEN CURRENT
+      if (!isActive) {
+
+        item.classList.add("stc-active");
+
+        if (icon)
+          icon.textContent = "×";
+
+        if (answer) {
+
+          answer.style.maxHeight =
+            answer.scrollHeight + "px";
+
+        }
+
+      }
+
+    }
+  );
+
+})();
