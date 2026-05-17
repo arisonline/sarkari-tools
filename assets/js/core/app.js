@@ -400,6 +400,8 @@ export function loadLayout() {
           utilities. Like: image resizer, typing test, JPG to PDF converter, photo and
           signature joiner, photo name and date joiner and more.
         </p>
+
+        <p>This website is a private tool platform and is not affiliated with any government organization.</p>
       </div>
     </section>
   `;
